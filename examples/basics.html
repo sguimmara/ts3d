@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic setup - X3.js X3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/x3.css">
+  </head>
+
+  <body>
+    <script src="dist/x3.js"></script>
+    <script type="text/javascript">
+
+      const app = x3.X3.create();
+
+      document.body.appendChild(app.domElement);
+
+      function update(ts) {
+        app.update(ts);
+        window.requestAnimationFrame(update);
+      }
+
+      app.enableDebugOverlay(true);
+      app.loadGltf("https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/DamagedHelmet/glTF-Binary/DamagedHelmet.glb");
+
+      update(0);
+
+    </script>
+  </body>
+</html>

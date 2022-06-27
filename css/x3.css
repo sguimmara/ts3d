@@ -1,0 +1,24 @@
+.debug-overlay {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    border-color: aliceblue;
+    background-color: rgba(73, 73, 73, 0.3);
+    margin: 5px;
+    padding: 3px;
+}
+
+.debug-text {
+    margin: 0px;
+    padding: 1px;
+    font-family: monospace;
+    color: antiquewhite;
+}
+
+.debug-header {
+    margin: 0px;
+    padding: 1px;
+    font-family: monospace;
+    color: antiquewhite;
+    font-weight: bold;
+}
