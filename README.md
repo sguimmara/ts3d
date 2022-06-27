@@ -13,6 +13,7 @@ yarn install
 Start the server
 
 ```shell
+yarn run build
 yarn run start
 ```
 
